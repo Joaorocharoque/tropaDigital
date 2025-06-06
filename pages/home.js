@@ -8,8 +8,20 @@ export default function Home() {
       <Sidebar />
       <div className={styles.container} >
         <p className={styles.welcomeMessage}>Bem vindo de volta,<strong> Kaique Steck</strong></p>
-      <br />
-        <h2  className={styles.titleEventos}>Todos eventos</h2>
+        <br />
+        <h2 className={styles.titleEventos}>Todos eventos</h2>
+        <div style={{ position: 'relative', top: 0, left: '100%', display: 'flex', gap: '16px', margin: '16px' }}>
+          <input
+            type="text"
+            placeholder="Buscar eventos"
+            className={styles.inputArredondado}
+            style={{ maxWidth: 200 }}
+            // value e onChange serão implementados no Table futuramente
+          />
+          <button className={styles.buttonAdd}>
+            <i className="fas fa-plus"></i> Inserir novo
+          </button>
+        </div>
         <Table/>
       </div>
     </div>

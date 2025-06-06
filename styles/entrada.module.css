@@ -114,8 +114,11 @@
 }
 
 .titleMenu{
-  font-size: 20px;
+  font-size: 16px;
   color: #A3A3A3;
+  position: relative;
+  margin-bottom: 16px;
+
 
 }
 
@@ -182,4 +185,16 @@
   background-color: white;
   color: #CC623780;
   font-family: Poppins, sans-serif;
+}
+.buttonAdd{
+  padding: 10px 20px;
+  background-color: #CC6237;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 0px;
 }

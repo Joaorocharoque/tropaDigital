@@ -18,7 +18,7 @@ export default function Sidebar() {
     <aside className={styles.sidebar}>
        <img className={styles.logoTela1} src="/img/logo.PNG" alt="Logo" />
       <p className={styles.titleMenu}>MENU</p>
-      <nav>
+      <nav style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
         {menuItems.map(({ label, icon, href, active }) => {
           const isActive = active || router.pathname === href;
           return (
@@ -27,7 +27,7 @@ export default function Sidebar() {
               href={href}
               className={`${styles["menu-item"]} ${isActive ? styles.active : ""}`}
             >
-              <span style={{ display: 'flex', gap: '10px' }}>
+              <span style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
                 <i className={icon}></i>
                 {label}
               </span>
