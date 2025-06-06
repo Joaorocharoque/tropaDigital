@@ -35,6 +35,50 @@ export default function Sidebar() {
           );
         })}
       </nav>
+      <div style={{
+        marginTop: '100px',
+        padding: '24px 0 0 0',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        borderTop: '1px solid #eee',
+        gap: '10px',
+         }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', width: '100%' }}>
+          <img
+            src="/img/login.png"
+            alt="Foto de perfil"
+            style={{ width: 48, height: 48, borderRadius: '50%', objectFit: 'cover' }}
+          />
+          <div style={{ textAlign: 'left' }}>
+            <div style={{ fontWeight: 'bold', fontSize: 16 }}>Kaique Steck</div>
+            <div style={{ color: '#CC6237', fontSize: 14 }}>Administrador</div>
+          </div>
+        </div>
+        <button style={{
+          background: '#fff',
+          color: '#CC6237',
+          border: '1px solid #CC6237',
+          borderRadius: 6,
+          padding: '6px 16px',
+          fontSize: 14,
+          cursor: 'pointer',
+          marginBottom: 4,
+        }}>
+          Alterar dados
+        </button>
+        <button style={{
+          background: '#CC6237',
+          color: '#fff',
+          border: 'none',
+          borderRadius: 6,
+          padding: '6px 16px',
+          fontSize: 14,
+          cursor: 'pointer',
+        }}>
+          Sair
+        </button>
+      </div>
     </aside>
   );
 }
