@@ -1,0 +1,185 @@
+/* styles/entrada.module.css */
+.conteudo {
+  background-color: white;
+  padding: 5rem;
+  border-radius: 1rem;
+  max-width: 600px;
+}
+
+.label {
+  color: #CC6237;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+}
+
+.inputArredondado {
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 44px;
+  /* espaço para o ícone Eye */
+  border-radius: 999px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+}
+
+.inputArredondado::placeholder {
+  color: #999;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.logo {
+  display: block;
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.enviar {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #CC6237;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.h2 {
+  color: #2A4D8E80;
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+}
+
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  display: flex;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.menu-item:hover {
+  background-color: #d3542e;
+  color: #fff;
+}
+
+.menu-item.active {
+  background-color: #d3542e;
+  color: #fff;
+}
+
+.menu-item i {
+  font-size: 16px;
+  color: inherit;
+}
+
+.menu-item span {
+  font-size: 16px;
+  text-align: center;
+
+}
+
+.titleMenu{
+  font-size: 20px;
+  color: #A3A3A3;
+
+}
+
+.logoTela1 {
+  display: start;
+  width: 200px;
+  height: 60px;
+}
+
+.titleEventos {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 30px;
+  color: #d3542e;
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 20px;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+} 
+
+.welcomeMessage {
+  font-size: 20px;
+  text-align: left;
+  color: #00000099;
+  margin-bottom: 6px;
+}
+
+.containerr {
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.table {
+  width: 200%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 22px;
+  text-align: left;
+  color: #657593;
+}
+
+.table thead {
+  background-color: #f3f3f3;
+}
+
+.table tr:hover {
+  background-color: #f9f9f9;
+}
+.table th {
+  background-color: white;
+  color: #CC623780;
+  font-family: Poppins, sans-serif;
+}
