@@ -29,7 +29,7 @@ export default function Home() {
           Entre com sua conta para acessar o painel.
         </h2>
         <div align="left">
-          <p className={styles.label}> Label do Input</p>
+          <p className={styles.label}> E-mail</p>
           <input
             type="text"
             placeholder="seunome@seuservidor.com"
@@ -84,6 +84,7 @@ export default function Home() {
           background: "#CC6237",
           borderRadius: "20px",
           width: "300px",
+          height: "610px",
           justifyContent: "flex-start"
         }}
       >

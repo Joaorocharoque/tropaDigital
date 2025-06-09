@@ -57,26 +57,28 @@ export default function Sidebar() {
         </div>
         <button style={{
           background: '#fff',
-          color: '#CC6237',
-          border: '1px solid #CC6237',
-          borderRadius: 6,
+          border: 'none',
           padding: '6px 16px',
           fontSize: 14,
           cursor: 'pointer',
+          textAlign: 'left' 
         }}>
+        <i className="fas fa-user-edit" style={{ color: '#CC6237', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
           Alterar dados
         </button>
         <button style={{
-          background: '#CC6237',
-          color: '#fff',
+          background: '#fff',
           border: 'none',
-          borderRadius: 6,
-          padding: '6px 16px',
           fontSize: 14,
           cursor: 'pointer',
+          display: 'flex',
+          textAlign: 'left' ,
         }}>
+          <i className="fas fa-power-off" style={{ color: '#CC6237', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
           Sair
+          
         </button>
+        
       </div>
     </aside>
   );

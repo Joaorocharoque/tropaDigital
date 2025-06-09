@@ -5,28 +5,38 @@ import Table from "./table";
 export default function Home() {
   return (
     <>
-    <div style={{ display: 'flex', minHeight: '100%' }}>
-      <Sidebar />
-      <div className={styles.container} >
-        <p className={styles.welcomeMessage}>Bem vindo de volta,<strong> Kaique Steck</strong></p>
-        <br />
-        <h2 className={styles.titleEventos}>Todos eventos</h2>
-        <div style={{ position: 'relative', top: 0, left: '100%', display: 'flex', gap: '16px', margin: '16px' }}>
-          <input
-            type="text"
-            placeholder="Buscar eventos"
-            className={styles.inputArredondado}
-            style={{ maxWidth: 200 }}
-          />
-          <button className={styles.buttonAdd}>
-            <i className="fas fa-plus"></i> Inserir novo
-          </button>
+      <div style={{ display: "flex", minHeight: "100%" }}>
+        <Sidebar />
+        <div className={styles.container}>
+          <p className={styles.welcomeMessage}>
+            Bem vindo de volta,<strong> Kaique Steck</strong>
+          </p>
+          <br />
+          <h2 className={styles.titleEventos}>Todos eventos</h2>
+          <div
+            style={{
+              position: "relative",
+              top: 0,
+              left: "100%",
+              display: "flex",
+              gap: "16px",
+              margin: "16px",
+            }}
+          >
+            <input
+              type="text"
+              placeholder="Buscar eventos"
+              className={styles.inputArredondado}
+              style={{ maxWidth: 200 }}
+            />
+            <button className={styles.buttonAdd}>
+              <i className="fas fa-plus"></i> Inserir novo
+            </button>
+          </div>
+          <Table />
         </div>
-        <Table/>
       </div>
-      
-    </div>
-     <div
+      <div
         style={{
           display: "flex",
           justifyContent: "flex-end",
@@ -38,6 +48,7 @@ export default function Home() {
       >
         <button
           style={{
+            padding: "6px 12px",
             color: "white",
             backgroundColor: "#CC6237",
             border: "none",
@@ -75,6 +86,6 @@ export default function Home() {
           Próxima
         </button>
       </div>
-      </>
+    </>
   );
 }
