@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div
       className={styles.wrapper}
-      style={{ display: "flex", minHeight: "100vh" }}
+      style={{ display: "flex", minHeight: "100%" }}
     >
       <div
         className={styles.conteudo}
@@ -21,64 +21,76 @@ export default function Home() {
           justifyContent: "center",
         }}
       >
-        <div>
-          <img className={styles.logo} src="/img/logo.PNG" alt="Logo" />
+        <div >
+        <img align="left" className={styles.logoTela1} src="/img/logo.PNG" alt="Logo" />
         </div>
         <h1 className={styles.label}>Bem-vindo de volta</h1>
         <h2 className={styles.h2}>
           Entre com sua conta para acessar o painel.
         </h2>
-        <div>
+        <div align="left">
           <p className={styles.label}> Label do Input</p>
           <input
             type="text"
-            placeholder="Digite aqui"
+            placeholder="seunome@seuservidor.com"
             className={styles.inputArredondado}
           />
         </div>
         <br />
-        <div>
+        <div align="left">
           <p className={styles.label}>Senha</p>
-          <div className="relative">
+          <div style={{ position: 'relative', width: '100%' }}>
             <input
               type={passwordVisible ? "text" : "password"}
               placeholder="Digite aqui"
               className={styles.inputArredondado}
+              style={{ paddingRight: 40 }}
             />
             <button
               type="button"
               onClick={() => setPasswordVisible(!passwordVisible)}
               aria-label={passwordVisible ? "Esconder senha" : "Mostrar senha"}
+              style={{
+                position: 'absolute',
+                right: 12,
+                top: '50%',
+                transform: 'translateY(-50%)',
+                background: 'none',
+                border: 'none',
+                padding: 0,
+                cursor: 'pointer',
+                color: '#CC6237'
+              }}
             >
-              <Eye size={20} />
+              <Eye  size={20} 
+              style={{
+                color: passwordVisible ? "#CC6237" : "#999",
+                transition: "color 0.2s",
+                marginLeft: "-150px",
+              }}/>
             </button>
           </div>
           <br />
           <Link href="/home">
-            <button className={styles.enviar}>Enviar</button>
+            <button align="left" className={styles.enviar}>Enviar</button>
           </Link>
         </div>
-        <br />
-        <Link href="/login">
-          <button className={styles.enviar}>Registrar-se</button>
-        </Link>
       </div>
       <div
         style={{
           flex: 1,
           display: "flex",
           alignItems: "center",
-          justifyContent: "center",
           background: "#CC6237",
           borderRadius: "20px",
-          overflow: "hidden",
+          width: "300px",
+          justifyContent: "flex-start"
         }}
       >
         <img
-          className={styles.fundo}
           src="/img/login.PNG"
           alt="Fundo"
-          style={{ width: "100%", height: "80vh", objectFit: "cover" }}
+          style={{ width: "90%", height: "80%", marginLeft: "-100px", marginBottom: "-28%" }}
         />
       </div>
     </div>

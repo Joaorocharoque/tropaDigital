@@ -36,7 +36,7 @@ export default function Sidebar() {
         })}
       </nav>
       <div style={{
-        marginTop: '100px',
+        marginTop: '80px',
         padding: '24px 0 0 0',
         display: 'flex',
         flexDirection: 'column',
@@ -63,7 +63,6 @@ export default function Sidebar() {
           padding: '6px 16px',
           fontSize: 14,
           cursor: 'pointer',
-          marginBottom: 4,
         }}>
           Alterar dados
         </button>

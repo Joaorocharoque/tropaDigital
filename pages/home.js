@@ -4,6 +4,7 @@ import Table from "./table";
 
 export default function Home() {
   return (
+    <>
     <div style={{ display: 'flex', minHeight: '100%' }}>
       <Sidebar />
       <div className={styles.container} >
@@ -16,7 +17,6 @@ export default function Home() {
             placeholder="Buscar eventos"
             className={styles.inputArredondado}
             style={{ maxWidth: 200 }}
-            // value e onChange serão implementados no Table futuramente
           />
           <button className={styles.buttonAdd}>
             <i className="fas fa-plus"></i> Inserir novo
@@ -24,6 +24,57 @@ export default function Home() {
         </div>
         <Table/>
       </div>
+      
     </div>
+     <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          alignItems: "center",
+          marginRight: "60px",
+          marginTop: -60,
+          gap: 14,
+        }}
+      >
+        <button
+          style={{
+            color: "white",
+            backgroundColor: "#CC6237",
+            border: "none",
+            borderRadius: "6px",
+            cursor: "pointer",
+            textDecoration: "none",
+            display: "inline-block",
+            fontSize: "16px",
+            marginBottom: "0px",
+          }}
+        >
+          Anterior
+        </button>
+        <span style={{ fontWeight: "bold", color: "#CC6237", fontSize: 16 }}>
+          1
+        </span>
+        <span style={{ fontWeight: "bold", color: "#CC6237", fontSize: 16 }}>
+          2
+        </span>
+        <span style={{ fontWeight: "bold", color: "#CC6237", fontSize: 16 }}>
+          3
+        </span>
+        <button
+          style={{
+            padding: "6px 12px",
+            border: "1px solid #CC6237",
+            background: "#CC6237",
+            color: "#fff",
+            borderRadius: 4,
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
+          disabled
+        >
+          Próxima
+        </button>
+      </div>
+      </>
   );
 }
