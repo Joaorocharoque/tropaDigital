@@ -63,8 +63,10 @@ export default function Sidebar() {
           cursor: 'pointer',
           marginRight: '25%',
           textAlign: 'left',
+          fontWeight: 500,
+          color: '#252525' 
         }}>
-        <i className="fas fa-user-edit" style={{ color: 'black', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
+        <i className="fas fa-user-edit" style={{ color: '#252525', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
           Alterar dados
         </button>
         <button style={{
@@ -73,9 +75,10 @@ export default function Sidebar() {
           fontSize: 14,
           cursor: 'pointer',
           display: 'flex',
-          marginRight: '55%',
+          marginRight: '51%',
+          color: '#252525'
         }}>
-          <i className="fas fa-power-off" style={{ color: 'black', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
+          <i className="fas fa-power-off" style={{ color: '#252525', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
           Sair
           
         </button>      
