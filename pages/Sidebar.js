@@ -18,7 +18,7 @@ export default function Sidebar() {
     <aside className={styles.sidebar}>
        <img className={styles.logoTela1} src="/img/logo.PNG" alt="Logo" />
       <p className={styles.titleMenu}>MENU</p>
-      <nav style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+      <nav style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         {menuItems.map(({ label, icon, href, active }) => {
           const isActive = active || router.pathname === href;
           return (
@@ -27,7 +27,7 @@ export default function Sidebar() {
               href={href}
               className={`${styles["menu-item"]} ${isActive ? styles.active : ""}`}
             >
-              <span style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+              <span style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                 <i className={icon}></i>
                 {label}
               </span>
@@ -36,7 +36,7 @@ export default function Sidebar() {
         })}
       </nav>
       <div style={{
-        marginTop: '80px',
+        marginTop: '80%',
         padding: '24px 0 0 0',
         display: 'flex',
         flexDirection: 'column',
@@ -51,8 +51,8 @@ export default function Sidebar() {
             style={{ width: 48, height: 48, borderRadius: '50%', objectFit: 'cover' }}
           />
           <div style={{ textAlign: 'left' }}>
-            <div style={{ fontWeight: 'bold', fontSize: 16 }}>Kaique Steck</div>
-            <div style={{ color: '#CC6237', fontSize: 14 }}>Administrador</div>
+            <div style={{ fontWeight: 'bold', fontSize: 16,fontFamily: 'Roboto, sans-serif' }}>Kaique Steck</div>
+            <div style={{ color: '#00000080',fontFamily: 'Roboto, sans-serif',fontSize: 14 }}>Administrador</div>
           </div>
         </div>
         <button style={{
@@ -61,9 +61,10 @@ export default function Sidebar() {
           padding: '6px 16px',
           fontSize: 14,
           cursor: 'pointer',
-          textAlign: 'left' 
+          marginRight: '25%',
+          textAlign: 'left',
         }}>
-        <i className="fas fa-user-edit" style={{ color: '#CC6237', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
+        <i className="fas fa-user-edit" style={{ color: 'black', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
           Alterar dados
         </button>
         <button style={{
@@ -72,13 +73,12 @@ export default function Sidebar() {
           fontSize: 14,
           cursor: 'pointer',
           display: 'flex',
-          textAlign: 'left' ,
+          marginRight: '55%',
         }}>
-          <i className="fas fa-power-off" style={{ color: '#CC6237', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
+          <i className="fas fa-power-off" style={{ color: 'black', fontSize: 18 }}></i>&nbsp;&nbsp;&nbsp;
           Sair
           
-        </button>
-        
+        </button>      
       </div>
     </aside>
   );

@@ -91,6 +91,8 @@ export default function Home() {
         <img
           src="/img/login.PNG"
           alt="Fundo"
+            className="loginImageHideOnMobile"
+
           style={{ width: "90%", height: "80%", marginLeft: "-100px", marginBottom: "-28%" }}
         />
       </div>

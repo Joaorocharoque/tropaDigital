@@ -5,11 +5,11 @@ import Table from "./table";
 export default function Home() {
   return (
     <>
-      <div style={{ display: "flex", minHeight: "100%" }}>
+      <div style={{ display: "flex", minHeight: "100vh" }}>
         <Sidebar />
         <div className={styles.container}>
           <p className={styles.welcomeMessage}>
-            Bem vindo de volta,<strong> Kaique Steck</strong>
+            Bem vindo de volta,<strong style={{ color: "black" }}> Kaique Steck</strong>
           </p>
           <br />
           <h2 className={styles.titleEventos}>Todos eventos</h2>
@@ -23,34 +23,46 @@ export default function Home() {
               margin: "16px",
             }}
           >
-            <input
-              type="text"
-              placeholder="Buscar eventos"
-              className={styles.inputArredondado}
-              style={{ maxWidth: 200 }}
-            />
+            <div style={{ position: 'relative', width: 200 }}> <span style={{
+                position: 'absolute',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                display: 'flex',
+                alignItems: 'left',
+                pointerEvents: 'none',
+                color: '#00000033',
+                left: 10,
+                fontSize: 18
+              }}>
+                <i className="fas fa-search"></i>
+              </span>
+              <input 
+                type="text"
+                placeholder="Buscar eventos"
+                className={styles.inputArredondado}
+                style={{ maxWidth: 200, paddingRight: 36 , right: 36, paddingLeft: 36 }}
+              />
+             
+            </div>&nbsp;&nbsp;
             <button className={styles.buttonAdd}>
               <i className="fas fa-plus"></i> Inserir novo
             </button>
           </div>
           <Table />
-        </div>
-      </div>
-      <div
+          <div 
         style={{
           display: "flex",
-          justifyContent: "flex-end",
-          alignItems: "center",
-          marginRight: "60px",
-          marginTop: -60,
+          alignItems: "right",
+          alignContent: "right",
+          marginLeft: "122%",
+          marginTop: 0,
           gap: 14,
         }}
       >
         <button
           style={{
             padding: "6px 12px",
-            color: "white",
-            backgroundColor: "#CC6237",
+            color: "black",
             border: "none",
             borderRadius: "6px",
             cursor: "pointer",
@@ -62,30 +74,36 @@ export default function Home() {
         >
           Anterior
         </button>
-        <span style={{ fontWeight: "bold", color: "#CC6237", fontSize: 16 }}>
+        <button style={{fontSize: 20 , color: "#CC6237", background: "#CC6237",borderRadius: "200px", padding: "6px 12px", border: "none", cursor: "pointer" }}>
+        <span style={{ fontWeight: "bold", color: "white",  fontSize: 14 }}>
           1
-        </span>
-        <span style={{ fontWeight: "bold", color: "#CC6237", fontSize: 16 }}>
+        </span></button> &nbsp;
+        <button style={{ border: "none", cursor: "pointer" }}>
+        <span style={{  color: "black", fontSize: 14 }}>
           2
-        </span>
-        <span style={{ fontWeight: "bold", color: "#CC6237", fontSize: 16 }}>
+        </span></button> &nbsp;
+        <button style={{ border: "none", color:"white", cursor: "pointer" }}><span style={{  color: "#000000", fontSize: 14 }}>
           3
-        </span>
+        </span></button> &nbsp;
         <button
           style={{
-            padding: "6px 12px",
+            marginBottom: "",
+            padding: "12px 12px",
             border: "1px solid #CC6237",
             background: "#CC6237",
             color: "#fff",
-            borderRadius: 4,
+            borderRadius: 22,
             cursor: "pointer",
-            fontWeight: "bold",
+            fontFamily:"roboto, sans-serif",
           }}
           disabled
         >
           Próxima
         </button>
       </div>
+        </div>
+      </div>
+      
     </>
   );
 }

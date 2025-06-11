@@ -14,12 +14,6 @@ export default function TabelaPage() {
       ativo: "Ativo",
       data: "09 a 11 de Junho",
     },
-    {
-      nome: "Clube do Laço Coração Pantaneiro",
-      totalEquipes: 10,
-      ativo: "Ativo",
-      data: "09 a 11 de Junho",
-    },
   ];
 
   return (
@@ -62,13 +56,13 @@ export default function TabelaPage() {
                     flexDirection: "column",
                     alignItems: "center",
                     gap: "2px",
-                    height: "28px",
+                    height: "10px",
                     justifyContent: "center",
                   }}
                 >
-                  <span style={{ fontSize: "8px", lineHeight: "8px" }}>●</span>
-                  <span style={{ fontSize: "8px", lineHeight: "8px" }}>●</span>
-                  <span style={{ fontSize: "8px", lineHeight: "8px" }}>●</span>
+                  <span style={{ fontSize: "8px", lineHeight: "8px", color: "#CC6237" }}>●</span>
+                  <span style={{ fontSize: "8px", lineHeight: "8px", color: "#CC6237" }}>●</span>
+                  <span style={{ fontSize: "8px", lineHeight: "8px", color: "#CC6237" }}>●</span>
                 </div>
               </td>
             </tr>
